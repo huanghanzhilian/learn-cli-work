@@ -1,0 +1,23 @@
+{
+  "name": "hjp-test",
+  "version": "1.0.1",
+  "description": "",
+  "main": "bin/index.js",
+  "bin": {
+    "hjp-test": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dedent": "^0.7.0",
+    "hjp-test-lib": "^1.0.1",
+    "yargs": "^17.3.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@hjp-cli-dev/core": "^1.0.4"
+  }
+}

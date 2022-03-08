@@ -7,7 +7,8 @@
     "hjp-test": "bin/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "dev": "webpack -w"
   },
   "dependencies": {
     "commander": "^7.0.0",
@@ -15,10 +16,12 @@
     "hjp-test-lib": "^1.0.1",
     "yargs": "^17.3.1"
   },
+  "devDependencies": {
+    "@hjp-cli-dev/core": "^1.0.4",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@hjp-cli-dev/core": "^1.0.4"
-  }
+  "license": "ISC"
 }

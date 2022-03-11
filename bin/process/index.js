@@ -35,14 +35,35 @@ cp.execFile('ls', ['-la'], function(err, stdout, stderr){
 });*/
 
 
-cp.exec(path.resolve(__dirname, 'test.shell'), {
+/*cp.exec(path.resolve(__dirname, 'test.shell'), {
   cwd: path.resolve('..')
 }, function(err, stdout, stderr){
   console.log('err: ', err);
   console.log('stdout: ', stdout);
   console.log('stderr: ', stderr);
-});
+});*/
 
+/*const child = cp.spawn(path.resolve(__dirname, 'test.shell'), ['-al', '-bl'], {
+  cwd: path.resolve('..')
+})
+
+console.log(child.pid, process.pid)
+// 监听data
+child.stdout.on('data', function(chunk) {
+  console.log(chunk.toString());
+});
+// 监听错误
+child.stderr.on('data', function(err) {
+  console.log('stderr', err);
+});
+child.on('error', e => { // 监听错误
+  console.log('error')
+  process.exit(1);
+});
+// 监听退出
+child.on('exit', function (err) {
+  console.log('exit');
+});*/
 /**
  * 返回值：子进程对象
  * 参数1：执行连续的 shell 脚本
@@ -74,14 +95,10 @@ cp.exec(path.resolve(__dirname, 'test.shell'), {
 //     console.log(stderr); // 异常执行输出的结果
 // });
 
-
-
-
 // 返回 子进程
 // 执行类型 npm -v 命令
 // spawn: 使用流的方式执行，适合耗时任务，比如 npm install, 需要不断打印日志
 // exec, execFile: 适合比较小的任务
-/*
 var child = cp.spawn(process.platform === 'win32' ? 'npm.cmd' : 'npm', ['install'], {
     stdio: 'inherit',
     cwd: process.cwd()
@@ -99,7 +116,6 @@ child.on('error', function(err) {
 child.on('exit', function (err) {
     console.log('exit');
 });
-*/
 
 
 

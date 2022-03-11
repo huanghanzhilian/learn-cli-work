@@ -99,7 +99,7 @@ child.on('exit', function (err) {
 // 执行类型 npm -v 命令
 // spawn: 使用流的方式执行，适合耗时任务，比如 npm install, 需要不断打印日志
 // exec, execFile: 适合比较小的任务
-var child = cp.spawn(process.platform === 'win32' ? 'npm.cmd' : 'npm', ['install'], {
+/*var child = cp.spawn(process.platform === 'win32' ? 'npm.cmd' : 'npm', ['install'], {
     stdio: 'inherit',
     cwd: process.cwd()
 });
@@ -115,14 +115,13 @@ child.on('error', function(err) {
 // 监听退出
 child.on('exit', function (err) {
     console.log('exit');
-});
+});*/
 
 
 
 // node(main) -> node(child)
 // 底层也是调用 spawn
 // 返回一个 child，可以实现主进程和子进程通信
-/*
 
 const child = cp.fork( path.resolve(__dirname, 'child.js') ); // 使用多进程执行一段脚本
 // 主进程向子进程发送消息
@@ -136,7 +135,6 @@ child.on('message', (msg) => {
 });
 console.log('main process.pid', process.pid);
 
-*/
 
 // 同步方法
 /*

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-require('../dist/core')
+// require('../dist/core')
 
 
 // require("./ejs");
@@ -16,8 +16,7 @@ require('../dist/core')
 // ES Module
 // 加载：import
 // 输出：export / export default
-
-// require('./process');
+require('./process');
 
 // require('./inquirer');
 

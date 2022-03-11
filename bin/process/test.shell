@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Hello World !"
+
+ls
+
+echo $1
+
+echo $2

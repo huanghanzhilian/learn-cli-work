@@ -122,6 +122,7 @@ child.on('exit', function (err) {
 // node(main) -> node(child)
 // 底层也是调用 spawn
 // 返回一个 child，可以实现主进程和子进程通信
+/*
 
 const child = cp.fork( path.resolve(__dirname, 'child.js') ); // 使用多进程执行一段脚本
 // 主进程向子进程发送消息
@@ -134,14 +135,14 @@ child.on('message', (msg) => {
     child.disconnect(); // 断开连接，不然两边处于等待的状态
 });
 console.log('main process.pid', process.pid);
+*/
 
 
 // 同步方法
-/*
-const ret = cp.execSync('npm -v');
+/*const ret = cp.execSync('npm -v');
 console.log(ret.toString());
 
-const ret2 = cp.execFileSync('D:/tool/HBuilderX/HBuilderX.exe');
+const ret2 = cp.execFileSync(path.resolve(__dirname, 'test.shell'));
 console.log(ret2.toString());
 
 const ret3 = cp.spawnSync(process.platform === 'win32' ? 'npm.cmd' : 'npm', ['install']);

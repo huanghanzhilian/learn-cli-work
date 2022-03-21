@@ -4,7 +4,7 @@
   "description": "",
   "main": "bin/index.js",
   "bin": {
-    "hjp-test": "bin/index.js"
+    "hjp-test": "bin/inquirer/index.js"
   },
   "scripts": {
     "build": "webpack",
@@ -16,6 +16,7 @@
     "dedent": "^0.7.0",
     "fs-extra": "^10.0.1",
     "hjp-test-lib": "^1.0.1",
+    "inquirer": "^7.3.3",
     "path-exists": "^5.0.0",
     "pkg-dir": "^6.0.1",
     "urllib": "^2.38.0",

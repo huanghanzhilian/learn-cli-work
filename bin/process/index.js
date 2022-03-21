@@ -5,14 +5,16 @@ const path = require('path');
  * 异步
  * exec 执行 shell 命令
  */
-/*
-cp.exec('ls -la', function(err, stdout, stderr){
+cp.exec('ls -la | grep node_modules', function(err, stdout, stderr){
   console.log('err: ', err); // 错误
   console.log('stdout: ', stdout); // 正常运行输出的结果，后面会有个换行
   console.log('stderr: ', stderr); // 异常输出的结果
 });
-*/
 
+
+// ls -la
+// 等价于
+// /bin/sh -c "ls -la"
 /**
  * 异步
  * execFile 执行 shell 文件
@@ -115,7 +117,7 @@ child.on('error', function(err) {
 // 监听退出
 child.on('exit', function (err) {
     console.log('exit');
-});*/
+})*/;
 
 
 

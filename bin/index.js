@@ -26,4 +26,5 @@
 // readline 使用
 // require('./inquirer/readline')
 // require('./inquirer/generator')
-require('./inquirer/stepread')
+// require('./inquirer/stepread')
+require('./inquirer/ansi')

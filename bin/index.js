@@ -21,6 +21,9 @@
 // require('./inquirer');
 
 // 使用spinner实现命令行loading效果
+// require('./useSpinner')
 
-require('./useSpinner')
-
+// readline 使用
+// require('./inquirer/readline')
+// require('./inquirer/generator')
+require('./inquirer/stepread')

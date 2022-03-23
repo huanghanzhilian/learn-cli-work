@@ -4,7 +4,7 @@
   "description": "",
   "main": "bin/index.js",
   "bin": {
-    "hjp-test": "bin/inquirer/index.js"
+    "hjp-test": "bin/index.js"
   },
   "scripts": {
     "build": "webpack",
@@ -20,7 +20,9 @@
     "path-exists": "^5.0.0",
     "pkg-dir": "^6.0.1",
     "urllib": "^2.38.0",
-    "yargs": "^17.3.1"
+    "yargs": "^17.3.1",
+    "cli-spinners": "^2.6.1",
+    "cli-spinner": "^0.2.10"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",

@@ -16,7 +16,11 @@
 // ES Module
 // 加载：import
 // 输出：export / export default
-require('./process');
+// require('./process');
 
 // require('./inquirer');
+
+// 使用spinner实现命令行loading效果
+
+require('./useSpinner')
 

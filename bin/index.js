@@ -28,4 +28,5 @@
 // require('./inquirer/generator')
 // require('./inquirer/stepread')
 // require('./inquirer/ansi')
-require('./inquirer/rxjs')
+// require('./inquirer/rxjs')
+require('./inquirer/list')

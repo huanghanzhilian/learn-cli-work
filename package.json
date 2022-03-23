@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "axios": "^0.26.1",
+    "cli-spinner": "^0.2.10",
+    "cli-spinners": "^2.6.1",
     "commander": "^7.0.0",
     "dedent": "^0.7.0",
     "fs-extra": "^10.0.1",
@@ -19,10 +21,9 @@
     "inquirer": "^7.3.3",
     "path-exists": "^5.0.0",
     "pkg-dir": "^6.0.1",
+    "rxjs": "^7.5.5",
     "urllib": "^2.38.0",
-    "yargs": "^17.3.1",
-    "cli-spinners": "^2.6.1",
-    "cli-spinner": "^0.2.10"
+    "yargs": "^17.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",

@@ -27,4 +27,5 @@
 // require('./inquirer/readline')
 // require('./inquirer/generator')
 // require('./inquirer/stepread')
-require('./inquirer/ansi')
+// require('./inquirer/ansi')
+require('./inquirer/rxjs')

@@ -31,4 +31,6 @@
 // require('./inquirer/rxjs')
 // require('./inquirer/list')
 
-require('./ejs/index')
+// require('./ejs/index')
+
+require('./ejs/glob')
